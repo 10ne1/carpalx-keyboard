@@ -1,0 +1,53 @@
+### This file defines carpalx key mappings to be used by the kernel for any
+### standard keyboard, by loading with the /lib/udev/keymap tool
+
+### A udev .rule-file should accompany this file for loading on kbd add/change,
+### in which case this should be copied inside dir /lib/udev/keymaps
+
+##The following are for USB keyboards
+
+#The next three keymaps are for Microsoft Ergonomic keyboard 4k
+#0xC022D zoomin # Zoom In
+#0xC022E zoomout # Zoom Out
+#0xC01AB 0xBD #this is the spellcheck button
+
+#invert lctrl and caps
+0x70039 leftctrl
+0x700E0 capslock
+
+#first row
+0x70014 q
+0x7001A g
+0x70008 m
+0x70015 l
+0x70017 w
+0x7001C b
+0x70018 y
+0x7000C u
+0x70012 v
+0x70013 semicolon
+
+#second row
+0x70004 d
+0x70016 s
+0x70007 t
+0x70009 n
+0x7000A r
+0x7000B i
+0x7000D a
+0x7000E e
+0x7000F o
+0x70033 h
+
+#third row
+0x7001D z
+0x7001B x
+0x70006 c
+0x70019 f
+0x70005 j
+0x70011 k
+0x70010 p
+0x70036 comma
+0x70037 dot
+0x70038 slash
+

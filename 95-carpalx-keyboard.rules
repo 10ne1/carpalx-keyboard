@@ -1,0 +1,11 @@
+### This file contains udev rules to set the kernel standard keyboard layout
+### to carpalx on add/change events. It should be put in /etc/udev/rules.d
+
+ACTION!="add|change", GOTO="carpalx_layout_end"
+
+ENV{ID_INPUT_KEYBOARD}=="1", ENV{ID_BUS}=="usb", \
+	RUN+="keymap $name carpalx-usb", GOTO="carpalx_layout_end"
+
+ENV{ID_INPUT_KEYBOARD}=="1", RUN+="keymap $name carpalx-ps2"
+
+LABEL="carpalx_layout_end"

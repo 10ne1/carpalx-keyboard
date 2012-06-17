@@ -1,0 +1,48 @@
+### This file defines carpalx key mappings to be used by the kernel for any
+### standard keyboard, by loading with the /lib/udev/keymap tool
+
+### A udev .rule-file should accompany this file for loading on kbd add/change,
+### in which case this should be copied inside dir /lib/udev/keymaps
+
+##The following are for regular keayboards
+
+#invert caps & ctrl
+0x1D capslock
+0x3A leftctrl
+
+#first row
+0x10 q
+0x11 g
+0x12 m
+0x13 l
+0x14 w
+0x15 b
+0x16 y
+0x17 u
+0x18 v
+0x19 semicolon
+
+#second row
+0x1E d
+0x1F s
+0x20 t
+0x21 n
+0x22 r
+0x23 i
+0x24 a
+0x25 e
+0x26 o
+0x27 h
+
+#third row
+0x2C z
+0x2D x
+0x2E c
+0x2F f
+0x30 j
+0x31 k
+0x32 p
+0x33 comma
+0x34 dot
+0x35 slash
+
