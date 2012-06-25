@@ -6,4 +6,4 @@ if ! [ $(id -u) = 0 ]; then
 fi
 
 cp carpalx* /lib/udev/keymaps
-cp 95-carpalx-keyboard.rules /etc/udev/rules.d
+cp *.rules /etc/udev/rules.d
