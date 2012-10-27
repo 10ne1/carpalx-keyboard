@@ -6,11 +6,6 @@
 
 ##The following are for USB keyboards
 
-#The next three keymaps are for Microsoft Ergonomic keyboard 4k
-#0xC022D zoomin # Zoom In
-#0xC022E zoomout # Zoom Out
-#0xC01AB 0xBD #this is the spellcheck button
-
 #invert lctrl and caps
 0x70039 leftctrl
 0x700E0 capslock
