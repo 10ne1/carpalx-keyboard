@@ -1,3 +1,0 @@
-
-ENV{ID_VENDOR}=="Microsoft", ENV{ID_MODEL_ID}=="00db", \
-	RUN+="keymap $name carpalx-ms4k"
