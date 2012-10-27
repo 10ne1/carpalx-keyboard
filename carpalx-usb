@@ -10,6 +10,9 @@
 0x70039 leftctrl
 0x700E0 capslock
 
+#make compose key behave like backspace
+0x70065 backspace
+
 #first row
 0x70014 q
 0x7001A g
