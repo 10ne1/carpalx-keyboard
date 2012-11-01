@@ -5,5 +5,5 @@ if ! [ $(id -u) = 0 ]; then
     exit 100
 fi
 
-cp carpalx* /lib/udev/keymaps
+cp carpalx* /usr/lib/udev/keymaps
 cp *.rules /etc/udev/rules.d
