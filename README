@@ -10,3 +10,9 @@ It is done low level so all ttys + applications will simply work.
 
 For more details, visit
 https://wiki.archlinux.org/index.php/Map_scancodes_to_keycodes
+
+
+Windows
+--------
+
+Was created with MS Keyboard Layout Creator 1.0
