@@ -1,1 +1,12 @@
-For documentation, go to https://wiki.archlinux.org/index.php/Map_scancodes_to_keycodes
+===== 
+Carpalx Keyboard - http://mkweb.bcgsc.ca/carpalx/
+===== 
+
+Linux
+-------- 
+
+This version remaps kbd keys in the kernel using udev.
+It is done low level so all ttys + applications will simply work.
+
+For more details, visit
+https://wiki.archlinux.org/index.php/Map_scancodes_to_keycodes
