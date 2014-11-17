@@ -2,12 +2,6 @@
 # compile with sudo udevadm hwdb --update
 # reboot
 
-# Microsoft Natural Ergonomic Keyboard 4000
-keyboard:usb:v045Ep00DB*
-#zoom keys
- KEYBOARD_KEY_c022d=zoomin
- KEYBOARD_KEY_c022e=zoomout
-
 #all usb kbds
 keyboard:usb:v*p*
 #caps<->ctrl
