@@ -13,12 +13,10 @@ fi
 
 if [ -e $CAR_KBD ]; then
     mv $CAR_KBD $CAR_KBD~
-    udevadm hwdb --update
-    udevadm trigger --subsystem-match="input"
-    echo "QWE"
 else
     mv $CAR_KBD~ $CAR_KBD
-    udevadm hwdb --update
-    udevadm trigger --subsystem-match="input"
-    echo "CAR"
 fi
+
+udevadm hwdb --update
+sleep 1
+udevadm trigger --subsystem-match="input"
