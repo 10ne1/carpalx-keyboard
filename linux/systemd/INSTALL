@@ -1,0 +1,6 @@
+1. Copy *.hwdb to /etc/udev/hwdb.d/
+2. Regenerate hwdb.bin db with: udevadm hwdb --update
+3. Trigger system update (or reboot): udevadm trigger --subsystem-match="input"
+4. Add change-kbd script to no-pass sudoers by appeding to /etc/sudoers smth like
+    %wheel ALL=(root) NOPASSWD: /path/to/change-kbd
+5. Toggle layouts as needed with change-kbd

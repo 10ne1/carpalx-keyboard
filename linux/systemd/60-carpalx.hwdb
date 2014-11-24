@@ -1,7 +1,3 @@
-# copy file to /etc/udev/hwdb.d/
-# compile with sudo udevadm hwdb --update
-# reboot
-
 #all usb kbds
 keyboard:usb:v*p*
 #caps<->ctrl

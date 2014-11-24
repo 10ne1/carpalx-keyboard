@@ -1,0 +1,24 @@
+#!/bin/sh
+
+CAR_KBD=/etc/udev/hwdb.d/61-carpalx.hwdb
+
+if [ $# -ne 0 ]; then
+    if [ -e $CAR_KBD ]; then
+	echo "CAR"
+    else
+	echo "QWE"
+    fi
+    exit 0  
+fi
+
+if [ -e $CAR_KBD ]; then
+    mv $CAR_KBD $CAR_KBD~
+    udevadm hwdb --update
+    udevadm trigger --subsystem-match="input"
+    echo "QWE"
+else
+    mv $CAR_KBD~ $CAR_KBD
+    udevadm hwdb --update
+    udevadm trigger --subsystem-match="input"
+    echo "CAR"
+fi
