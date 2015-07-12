@@ -1,5 +1,5 @@
 #all usb kbds
-keyboard:usb:v*p*
+evdev:input:b0003v*p*
 #caps<->ctrl
  KEYBOARD_KEY_70039=capslock
  KEYBOARD_KEY_700E0=leftctrl
@@ -38,7 +38,7 @@ keyboard:usb:v*p*
  KEYBOARD_KEY_70038=slash
 
 #std laptop kbds
-keyboard:dmi:bvn*:bvr*:bd*:svn*:pn*:pvr*
+evdev:atkbd:dmi:bvn*:bvr*:bd*:svn*:pn*:pvr*
 #ctrl<->caps
  KEYBOARD_KEY_1D=leftctrl
  KEYBOARD_KEY_3A=capslock
