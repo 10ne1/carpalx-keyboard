@@ -1,5 +1,9 @@
 #all usb kbds
 evdev:input:b0003v*p*
+# lwin<->enter
+ KEYBOARD_KEY_700E7=backspace
+# altgr<->backspace
+ KEYBOARD_KEY_700E6=enter
 #caps<->ctrl
  KEYBOARD_KEY_70039=leftctrl
  KEYBOARD_KEY_700E0=capslock
