@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CAR_KBD=/etc/udev/hwdb.d/61-carpalx.hwdb
+
+if [ -e $CAR_KBD ]; then
+   echo "CAR"
+else
+   echo "QWE"
+fi

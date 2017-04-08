@@ -2,7 +2,7 @@
 2. Regenerate hwdb.bin db with: udevadm hwdb --update
 3. Trigger system update (or reboot): udevadm trigger --subsystem-match="input"
 4. Add change-kbd script to no-pass sudoers by appeding to /etc/sudoers
-    %wheel ALL=(root) NOPASSWD: /path/to/change-kbd
+    %wheel ALL=(root) NOPASSWD: /home/adi/workspace/carpalx-keyboard/linux/systemd/changekbd
 1. Toggle layouts as needed with change-kbd
 
 To debug:
