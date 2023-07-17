@@ -1,5 +1,7 @@
 #all usb kbds
 evdev:input:b0003v*p*
+# - to windows
+ KEYBOARD_KEY_700E1=leftmeta
 # lwin<->enter
  KEYBOARD_KEY_700E7=backspace
 # altgr<->backspace

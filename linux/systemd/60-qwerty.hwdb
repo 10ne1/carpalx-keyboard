@@ -1,5 +1,7 @@
 #all usb kbds
 evdev:input:b0003v*p*
+# - to windows
+ KEYBOARD_KEY_700E1=leftmeta
 #caps<->ctrl
  KEYBOARD_KEY_70039=capslock
  KEYBOARD_KEY_700E0=leftctrl
