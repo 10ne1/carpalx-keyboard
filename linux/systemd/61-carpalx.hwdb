@@ -1,14 +1,11 @@
 #all usb kbds
 evdev:input:b0003v*p*
-# undo - to windows
- KEYBOARD_KEY_700E1=leftshift
-# lwin<->enter
- KEYBOARD_KEY_700E7=backspace
-# altgr<->backspace
- KEYBOARD_KEY_700E6=enter
-#caps<->ctrl
- KEYBOARD_KEY_70039=leftctrl
- KEYBOARD_KEY_700E0=capslock
+# special keys
+ KEYBOARD_KEY_7002D=leftmeta
+ KEYBOARD_KEY_700E4=minus
+ KEYBOARD_KEY_700E6=leftshift
+ KEYBOARD_KEY_700E0=leftctrl
+ KEYBOARD_KEY_700E2=rightalt
 #fst row
  KEYBOARD_KEY_70014=q
  KEYBOARD_KEY_7001A=g
