@@ -1,11 +1,11 @@
 #!/bin/sh
 
-CAR_KBD=/etc/udev/hwdb.d/61-carpalx.hwdb
+KIN_KBD=/etc/udev/hwdb.d/61-kinesis.hwdb
 
-if [ -e $CAR_KBD ]; then
-    mv $CAR_KBD $CAR_KBD~
+if [ -e $KIN_KBD ]; then
+    mv $KIN_KBD $KIN_KBD~
 else
-    mv $CAR_KBD~ $CAR_KBD
+    mv $KIN_KBD~ $KIN_KBD
 fi
 
 udevadm hwdb --update
