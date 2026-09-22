@@ -1,8 +1,8 @@
 #!/bin/sh
 
-CAR_KBD=/etc/udev/hwdb.d/61-carpalx.hwdb
+KIN_KBD=/etc/udev/hwdb.d/61-kinesis.hwdb
 
-if [ -e $CAR_KBD ]; then
+if [ -e $KIN_KBD ]; then
    echo "CAR"
 else
    echo "QWE"
