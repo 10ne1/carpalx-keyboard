@@ -1,10 +1,13 @@
 1. Copy *.hwdb to /etc/udev/hwdb.d/
-2. Regenerate hwdb.bin db with: udevadm hwdb --update
+2. Regenerate hwdb.bin db with: systemd-hwdb update
+   (older systemd: udevadm hwdb --update -- deprecated since systemd 246)
 3. Trigger system update (or reboot): udevadm trigger --subsystem-match="input"
-4. Add change-kbd script to no-pass sudoers by appeding to /etc/sudoers
+4. Add changekbd script to no-pass sudoers by appending to /etc/sudoers
     %wheel ALL=(root) NOPASSWD: /home/adi/workspace/carpalx-keyboard/linux/systemd/changekbd
-1. Toggle layouts as needed with change-kbd
+5. Toggle layouts as needed with changekbd
 
 To debug:
 1. sudo evtest to get a list of input devices
 2. udevadm info /sys/class/input/event2 to get device data (use num from evtest)
+3. systemd-hwdb query "evdev:input:b0003v05ACp024F*" to check which properties
+   a given modalias resolves to (take the modalias from step 2)

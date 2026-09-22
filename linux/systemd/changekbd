@@ -8,5 +8,5 @@ else
     mv $KIN_KBD~ $KIN_KBD
 fi
 
-udevadm hwdb --update
+systemd-hwdb update
 udevadm trigger --subsystem-match="input"
